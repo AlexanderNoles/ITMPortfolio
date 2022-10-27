@@ -1,0 +1,50 @@
+:root
+{
+    --primary-color:#2c384d;
+    --secondary-color:#d1d8e6;
+    --highlight-color:#eeeeee;
+}
+
+h1
+
+{
+
+    font: bold 26px arial, sans-serif;
+
+    color : var(--primary-color);
+
+    padding : 20px;
+
+    background-color: var(--secondary-color);
+}
+
+table
+{
+    font: bold 26px arial, sans-serif;
+    border-spacing:0;
+    border-collapse: collapse;
+    color : var(--highlight-color);
+}
+
+td[rowspan] 
+{
+
+    font-size: 1.5em;
+
+}
+
+h2
+{
+
+    font: 20px arial, sans-serif;
+
+    color : var(--secondary-color);
+
+    padding : 20px;
+
+}
+
+body
+{
+    background-color: var(--primary-color);
+}
