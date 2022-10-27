@@ -1,50 +1,147 @@
 :root
 {
-    --primary-color:#2c384d;
-    --secondary-color:#d1d8e6;
-    --highlight-color:#eeeeee;
+    --background-color:rgba(22, 38, 35, 0.5);
+    --background-accent-color: rgb(44, 65, 61);
+    --aplha-value: 1;
+    --primary-color:rgba(199, 43, 63,var(--aplha-value));
+    --secondary-color: rgba(146, 30, 45, var(--aplha-value));
+    --highlight-color: rgba(238, 238, 238,1);
+
+    /* Stops user select on all web browsers*/
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
-h1
-
+body 
 {
-
-    font: bold 26px arial, sans-serif;
-
-    color : var(--primary-color);
-
-    padding : 20px;
-
-    background-color: var(--secondary-color);
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120vw;
+    background-color: rgba(0, 0, 0, 0.788);
+    background-blend-mode: color-dodge;
 }
 
-table
+
+header{
+    height: 100%;
+    top: -10px; /* This line and the next one are there to fix a bit of empty space near the top of the nav bar */
+    padding-top: 10px;
+    left: -3px;
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: fixed;
+    padding: 7px;
+    border: medium solid var(--primary-color);
+    box-shadow: 10px 0 5px -2px black;
+    z-index: 999; /* This makes sure that the navigation bar is always on top */
+}
+
+.title
 {
-    font: bold 26px arial, sans-serif;
-    border-spacing:0;
-    border-collapse: collapse;
+    text-decoration: none; /* No awful blue links */
+    font: bold 35px arial, sans-serif;
     color : var(--highlight-color);
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /*border: medium solid var(--primary-color);*/
 }
 
-td[rowspan] 
+.title:hover
 {
+    color: var(--primary-color);
+}
 
-    font-size: 1.5em;
+/* items on navigation bar as a whole */
+nav 
+{
+    text-align: center;
+    width: 95%;
+    margin: 5px;
+}
 
+nav ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+}
+/* items on navigation bar as a whole */
+
+/* each individual navigation element */
+nav li
+{
+    background-color: var(--background-accent-color);
+    margin-top: 3px;
+    padding: 2px;
+}
+
+.highlight
+{
+    background-color: var(--primary-color);
+}
+
+nav li:hover
+{
+    background-color: var(--primary-color);
+}
+
+nav a 
+{
+    color: var(--highlight-color);
+    text-decoration: none; /* No awful blue links */
+    font: 1.3rem arial, sans-serif;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+/* each individual navigation element */
+
+.mainContent
+{
+    /*border: medium solid var(--primary-color);*/
+    position: fixed;
+    left: 225px;
+    right: 10px;
+    bottom: 8px;
+    top: 8px;
+    backdrop-filter: blur(1.2px);
+}
+
+.mainContent h1
+{
+    font: bold 35px arial, sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.highlightText
+{
+    color: var(--primary-color);
+    font: bold 20px arial, sans-serif;
 }
 
 h2
 {
-
     font: 20px arial, sans-serif;
-
-    color : var(--secondary-color);
-
+    color : var(--highlight-color);
     padding : 20px;
-
 }
 
-body
+.fadeIn
 {
-    background-color: var(--primary-color);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
