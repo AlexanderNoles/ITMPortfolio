@@ -58,14 +58,14 @@ header{
 }
 
 /* items on navigation bar as a whole */
-nav 
+header nav 
 {
     text-align: center;
     width: 95%;
     margin: 5px;
 }
 
-nav ul 
+header nav ul 
 {
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@ nav ul
 /* items on navigation bar as a whole */
 
 /* each individual navigation element */
-nav li
+header nav li
 {
     background-color: var(--background-accent-color);
     margin-top: 3px;
@@ -88,12 +88,12 @@ nav li
     background-color: var(--primary-color);
 }
 
-nav li:hover
+header nav li:hover
 {
     background-color: var(--primary-color);
 }
 
-nav a 
+header nav a 
 {
     color: var(--highlight-color);
     text-decoration: none; /* No awful blue links */
@@ -106,21 +106,28 @@ nav a
 
 .mainContent
 {
-    /*border: medium solid var(--primary-color);*/
     position: fixed;
     left: 225px;
-    right: 10px;
+    right: 25px;
     bottom: 8px;
     top: 8px;
     backdrop-filter: blur(1.2px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .mainContent h1
 {
-    font: bold 35px arial, sans-serif;
-    color: white;
+    font: 25px arial, sans-serif;
+    color: var(--primary-color);
     text-align: center;
     width: 100%;
+    padding: 25px;
+    background-color: black;
+    margin-bottom: 3.5%;
 }
 
 .highlightText
@@ -129,11 +136,26 @@ nav a
     font: bold 20px arial, sans-serif;
 }
 
-h2
+.mainContent h2
 {
     font: 20px arial, sans-serif;
     color : var(--highlight-color);
     padding : 20px;
+    max-width: 500px;
+    max-height: auto;
+}
+
+.mainContent ul li
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mainContent img
+{    
+    margin-bottom: 3.5%;
+    max-width: auto;
+    max-height: 400px;  
 }
 
 .fadeIn
