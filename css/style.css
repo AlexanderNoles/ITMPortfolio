@@ -121,12 +121,11 @@ header nav a
 
 .mainContent h1
 {
-    font: 25px arial, sans-serif;
+    font: bold 25px arial, sans-serif;
     color: var(--primary-color);
     text-align: center;
     width: 100%;
     padding: 25px;
-    background-color: black;
     margin-bottom: 3.5%;
 }
 
