@@ -5,6 +5,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/main.js"></script>
         <title>
            Portfolio
         </title>
@@ -22,12 +23,18 @@
                     <li style="margin-top: 20px;"><a href="otherProjects.html">Other Projects</a></li>
                 </ul>
             </nav>
+            <h3>Change style</h3>
+            <ul class="colorSwitcher">
+                <li><input style="background-color: rgba(199, 43, 63,1);" id="switch-style" type="button" value="" onclick="changeToRed()"/></li>     
+                <li><input style="background-color: rgba(31, 181, 71, 1);" id="switch-style" type="button" value="" onclick="changeToGreen()"/></li>     
+                <li><input style="background-color: rgba(34, 95, 135, 1);" id="switch-style" type="button" value="" onclick="changeToBlue()"/></li>     
+            </ul>
         </header>
         <div class="mainContent">
             <h1> HOME </h1>
-            <img class="fadeIn" src="img/blahj.png"> </img>
-            <h2 class="fadeIn"> This is my <span class="highlightText">portfolio project</span> for my introduction to multimedia module.</h2>
-            <h2 class="fadeIn"> The website includes the five required pages, plus an additional page showcasing some other stuff. They are all listed on the <span class="highlightText">navigation bar to the left</span>. 
+            <img src="assets/homepageImage.png"> </img>
+            <h2> This is my <span class="highlightText">portfolio project</span> for my introduction to multimedia module.</h2>
+            <h2> The website includes the five required pages, plus an additional page showcasing some other stuff. They are all listed on the <span class="highlightText">navigation bar to the left</span>. 
                 To return to this page cick on the word "Portfolio" at the top of nav bar, or click the home button.
             </h2>  
         </div>

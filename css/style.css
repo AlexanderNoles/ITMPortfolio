@@ -2,10 +2,16 @@
 {
     --background-color:rgba(22, 38, 35, 0.5);
     --background-accent-color: rgb(44, 65, 61);
-    --aplha-value: 1;
-    --primary-color:rgba(199, 43, 63,var(--aplha-value));
-    --secondary-color: rgba(146, 30, 45, var(--aplha-value));
+    --primary-color:rgba(199, 43, 63,1);
+    --secondary-color: rgba(146, 30, 45, 1);
     --highlight-color: rgba(238, 238, 238,1);
+
+    background-image: url("../assets/bg.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.788);
+    background-blend-mode: color-dodge;
 
     /* Stops user select on all web browsers*/
     user-select: none;
@@ -14,17 +20,6 @@
     -webkit-user-select: none;
     -o-user-select: none;
 }
-
-body 
-{
-    background-image: url("../img/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 120vw;
-    background-color: rgba(0, 0, 0, 0.788);
-    background-blend-mode: color-dodge;
-}
-
 
 header{
     height: 100%;
@@ -38,7 +33,7 @@ header{
     padding: 7px;
     border: medium solid var(--primary-color);
     box-shadow: 10px 0 5px -2px black;
-    z-index: 999; /* This makes sure that the navigation bar is always on top */
+    z-index: 999;
 }
 
 .title
@@ -104,6 +99,30 @@ header nav a
 }
 /* each individual navigation element */
 
+header h3
+{
+    position: absolute;
+    bottom: 40px;
+    width: 95%;
+    color: var(--highlight-color);
+}
+
+.colorSwitcher
+{
+    position: absolute;
+    bottom: 0px;
+    width: 75%;
+    color: var(--highlight-color);
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+}
+
+.colorSwitcher li
+{
+    margin-left: 12%;
+}
+
 .mainContent
 {
     position: fixed;
@@ -117,6 +136,13 @@ header nav a
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .mainContent h1
@@ -152,17 +178,21 @@ header nav a
 
 .mainContent img
 {    
-    margin-bottom: 3.5%;
     max-width: auto;
-    max-height: 400px;  
+    max-height: 360px;  
+    scale: 1;
 }
 
-.fadeIn
+.mainContent figcaption
 {
-    animation: fadeIn 2s;
+    margin-bottom: 3.5%;
+    font: 15px arial, sans-serif;
+    color: var(--highlight-color);
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+.mainContent video
+{
+    max-height: 70%;
+    max-width: auto;
+    margin-bottom: 3%;
 }

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/main.js"></script>
         <title>
            Portfolio
         </title>
@@ -20,9 +21,16 @@
                     <li style="margin-top: 20px;"><a href="otherProjects.html">Other Projects</a></li>
                 </ul>
             </nav>
+            <h3>Change style</h3>
+            <ul class="colorSwitcher">
+                <li><input style="background-color: rgba(199, 43, 63,1);" id="switch-style" type="button" value="" onclick="changeToRed()"/></li>     
+                <li><input style="background-color: rgba(31, 181, 71, 1);" id="switch-style" type="button" value="" onclick="changeToGreen()"/></li>     
+                <li><input style="background-color: rgba(34, 95, 135, 1);" id="switch-style" type="button" value="" onclick="changeToBlue()"/></li>     
+            </ul>
         </header>
         <div class="mainContent">
             <h1> HOBBIES </h1>
+            <h2>Games, pixel-art and game development</h2>
         </div>
     </body>
 </html>
