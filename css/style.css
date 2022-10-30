@@ -5,6 +5,7 @@
     --primary-color:rgba(199, 43, 63,1);
     --secondary-color: rgba(146, 30, 45, 1);
     --highlight-color: rgba(238, 238, 238,1);
+    --image-hover-scale: 1.05;
 
     background-image: url("../assets/bg.jpg");
     height: 100%;
@@ -191,6 +192,25 @@ header h3
     max-width: auto;
     max-height: 360px;  
     scale: 1;
+    animation: offImageHover 0.1s;
+}
+
+@keyframes offImageHover
+{
+    0% {scale: var(--image-hover-scale);}
+    100% {scale: 1;}
+}
+
+.mainContent img:hover
+{
+    scale: var(--image-hover-scale);
+    animation: onImageHover 0.1s;
+}
+
+@keyframes onImageHover
+{
+    0% { scale: 1; }
+    100% { scale: var(--image-hover-scale); }
 }
 
 .mainContent figcaption
