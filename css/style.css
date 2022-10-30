@@ -5,7 +5,7 @@
     --primary-color:rgba(199, 43, 63,1);
     --secondary-color: rgba(146, 30, 45, 1);
     --highlight-color: rgba(238, 238, 238,1);
-    --image-hover-scale: 1.05;
+    --image-hover-scale: 1.1;
 
     background-image: url("../assets/bg.jpg");
     height: 100%;
@@ -211,6 +211,13 @@ header h3
 {
     0% { scale: 1; }
     100% { scale: var(--image-hover-scale); }
+}
+
+.courseWorkLink
+{
+    border: medium solid var(--primary-color);
+    width: 100%;
+    filter: drop-shadow(0px 0px 20px black);
 }
 
 .mainContent figcaption
