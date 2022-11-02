@@ -141,6 +141,13 @@ header h3
     animation: fadeIn 1s;
 }
 
+.mainContent a
+{
+    text-decoration: underline; /* No awful blue links */
+    color: var(--primary-color);
+    font: bold 20px arial, sans-serif;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
