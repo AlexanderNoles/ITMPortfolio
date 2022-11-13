@@ -6,6 +6,8 @@
     --secondary-color: rgba(146, 30, 45, 1);
     --highlight-color: rgba(238, 238, 238,1);
     --image-hover-scale: 1.1;
+    --screenWidth: 1920;
+    --screenHeight: 1080;
 
     background-image: url("../assets/bg.jpg");
     height: 100%;
@@ -144,6 +146,13 @@ header h3
     flex-direction: column;
 
     animation: fadeIn 1s;
+
+    transform:scale(
+        min(
+            calc(var(--screenWidth)/1920),
+            calc(var(--screenHeight)/1080)
+        )      
+        );
 }
 
 .mainContent a
