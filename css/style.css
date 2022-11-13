@@ -6,8 +6,6 @@
     --secondary-color: rgba(146, 30, 45, 1);
     --highlight-color: rgba(238, 238, 238,1);
     --image-hover-scale: 1.1;
-    --screenWidth: 1920;
-    --screenHeight: 1080;
 
     background-image: url("../assets/bg.jpg");
     height: 100%;
@@ -145,14 +143,10 @@ header h3
     align-items: center;
     flex-direction: column;
 
-    animation: fadeIn 1s;
+    overflow: hidden;
+    overflow-y: auto;
 
-    transform:scale(
-        min(
-            calc(var(--screenWidth)/1920),
-            calc(var(--screenHeight)/1080)
-        )      
-        );
+    animation: fadeIn 1s;
 }
 
 .mainContent a
@@ -171,9 +165,9 @@ header h3
 {
     font: bold 25px arial, sans-serif;
     color: var(--primary-color);
-    width: 95%;
+    width: 100%;
     text-align: center;
-    padding: 25px;
+    margin-top: 2%;
     margin-bottom: 3.5%;
 }
 
@@ -195,7 +189,7 @@ header h3
 .mainContent ul
 {
     width: 100%;
-    height: 70%;
+    height: 100%;
     text-align: center;
 }
 
@@ -204,7 +198,7 @@ header h3
     display: inline-block;
     vertical-align: top;
     width: 30%;
-    height: 100%;
+    height: 95%;
     margin: 20px;
 }
 
@@ -214,6 +208,12 @@ header h3
     max-height: 360px;  
     scale: 1;
     animation: offImageHover 0.1s;
+}
+
+.mainContent ul li img
+{
+    max-width: 100%;
+    max-height:  auto;
 }
 
 @keyframes offImageHover

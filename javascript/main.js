@@ -30,12 +30,6 @@ window.onload = () =>
     cssRoot.style.setProperty('--primary-color', localStorage.getItem('primary'));
 };
 
-window.onresize = () =>
-{
-    cssRoot.style.setProperty('--screenWidth', window.innerWidth);
-    cssRoot.style.setProperty('--screenHeigt', window.innerHeight);
-};
-
 function onNavClick()
 {
     onClickNavSound.currentTime = 0;
