@@ -25,6 +25,7 @@
 header{
     height: 100%;
     top: -10px; /* This line and the next one are there to fix a bit of empty space near the top of the nav bar */
+    width: 220px;
     padding-top: 10px;
     left: -3px;
     background-color: var(--background-color);
@@ -226,6 +227,28 @@ header h3
 {
     0% { scale: 1; }
     100% { scale: var(--image-hover-scale); }
+}
+
+.mainContent button
+{
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    border: medium solid var(--primary-color);
+    width: 200px;
+    height: 50px;
+    font: bold 25px arial, sans-serif;
+    cursor: pointer;
+}
+
+.mainContent button:hover
+{
+    background-color: var(--background-color);
+}
+
+.mainContent button:active
+{
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
 }
 
 .courseWorkLink
