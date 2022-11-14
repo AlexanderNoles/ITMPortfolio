@@ -210,12 +210,6 @@ header h3
     animation: offImageHover 0.1s;
 }
 
-.mainContent ul li img
-{
-    max-width: 100%;
-    max-height:  auto;
-}
-
 @keyframes offImageHover
 {
     0% {scale: var(--image-hover-scale);}
