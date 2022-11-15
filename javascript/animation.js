@@ -17,6 +17,7 @@ window.onresize = () =>
 {
     paper.canvas.parentNode.removeChild(paper.canvas);
     stopAnimation();
+    backGround.remove();
     generateWindow();
 }
 
