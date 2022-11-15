@@ -178,12 +178,6 @@ function stopAnimation()
     generateWindow(); //Reset animation
 }
 
-animationSound.ontimeupdate = () =>
-{
-    let percentThru = animationSound.currentTime/animationSound.duration * 100;
-    cssRoot.style.setProperty('--videoProgresPercent', `${percentThru}%`);
-}
-
 animationSound.onended = () =>
 {
     stopAnimation();

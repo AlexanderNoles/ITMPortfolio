@@ -7,7 +7,6 @@
     --highlight-color: rgba(238, 238, 238,1);
     --image-hover-scale: 1.1;
     --sidebarWidth: 220px;
-    --videoProgresPercent: 0%;
 
     background-image: url("../assets/bg.jpg");
     height: 100%;
@@ -275,15 +274,4 @@ header h3
     max-height: 70%;
     max-width: auto;
     margin-bottom: 3%;
-}
-
-.playbackBar
-{
-    position: fixed;
-    top: 99%;
-    left: 0;
-    height: 800px;
-    padding-bottom: 1%;
-    width: var(--videoProgresPercent);
-    background-color: var(--primary-color);
 }
