@@ -107,6 +107,7 @@ header h3
     bottom: 40px;
     width: 95%;
     color: var(--highlight-color);
+    font: bold 1.3rem arial, sans-serif;
 }
 
 .colorSwitcher
