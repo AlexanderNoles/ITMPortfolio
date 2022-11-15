@@ -280,10 +280,21 @@ header h3
 .playbackBar
 {
     position: fixed;
-    top: 99%;
+    top: 98%;
     left: 0;
     padding-bottom: 1%;
-    width: calc(var(--videoProgresPercent));
+    width: var(--videoProgresPercent);
     background-color: var(--primary-color);
+    z-index: 1001;
+}
+
+.playbackBarBacking
+{
+    position: fixed;
+    top: 98%;
+    left: 0;
+    padding-bottom: 3%;
+    width: 100%;
+    background-color: black;
     z-index: 1000;
 }
